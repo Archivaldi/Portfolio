@@ -89,6 +89,13 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.heading-projects {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-top: -14rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
 .u-center-text {
   text-align: center; }
 
@@ -103,8 +110,18 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 31rem 0;
   margin-top: -20vh; }
+
+.section-projects {
+  padding: 25rem 0 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-6.jpg);
+  background-size: cover;
+  background-color: #f7f7f7;
+  transform: skewY(-7deg);
+  margin-top: -11.5rem; }
+  .section-projects > * {
+    transform: skewY(7deg); }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -182,13 +199,13 @@ body {
     outline-offset: 2rem; }
     .composition__photo--p1 {
       left: 3rem;
-      top: 5rem; }
+      top: 2rem; }
     .composition__photo--p2 {
       right: -3rem;
-      top: 8rem; }
+      top: 5rem; }
     .composition__photo--p3 {
       left: 20%;
-      top: 21rem; }
+      top: 18rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
@@ -197,11 +214,97 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    height: 50rem;
+    transition: all 1.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: soft-light;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      border-radius: 3px;
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/car-diagnostic.jpg); }
+    .card__picture--2 {
+      background-image: url(../img/bot.jpg); }
+    .card__picture--3 {
+      background-image: url(../img/stock-check.jpg); }
+    .card__picture--4 {
+      background-image: url(../img/books.jpg); }
+    .card__picture--5 {
+      background-image: url(../img/click.jpg); }
+    .card__picture--6 {
+      background-image: url(../img/shop.jpg); }
+    .card__picture--7 {
+      background-image: url(../img/color-toy.jpg); }
+    .card__picture--8 {
+      background-image: url(../img/friends.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading--span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading--span-1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+  .card__details {
+    padding-top: 3rem;
+    margin: 0 auto; }
+    .card__details p {
+      text-align: center;
+      padding: 1rem; }
+  .card__cta {
+    color: #fff;
+    position: absolute;
+    width: 90%;
+    padding: 3rem; }
+    .card__cta .description {
+      font-size: 1.8rem; }
+      .card__cta .description:first-child {
+        margin-bottom: 2rem; }
+    .card__cta .btn {
+      top: 12rem;
+      left: 50%;
+      transform: translate(-50%, 0); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/tay.jpg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
   .header__logo-box {
@@ -218,7 +321,7 @@ body {
     text-align: center; }
 
 .row {
-  max-width: 114rem;
+  max-width: 150rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
