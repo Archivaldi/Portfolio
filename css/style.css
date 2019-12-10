@@ -233,9 +233,8 @@ body {
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -250,19 +249,26 @@ body {
       border-radius: 3px;
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/car-diagnostic.jpg); }
     .card__picture--2 {
-      background-image: url(../img/bot.jpg); }
+      border-radius: 3px;
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/bot.jpg); }
     .card__picture--3 {
-      background-image: url(../img/stock-check.jpg); }
+      border-radius: 3px;
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/stock-check.jpg); }
     .card__picture--4 {
-      background-image: url(../img/books.jpg); }
+      border-radius: 3px;
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/books.jpg); }
     .card__picture--5 {
-      background-image: url(../img/click.jpg); }
+      border-radius: 3px;
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/click.jpg); }
     .card__picture--6 {
-      background-image: url(../img/shop.jpg); }
+      border-radius: 3px;
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/shop.jpg); }
     .card__picture--7 {
+      border-radius: 3px;
       background-image: url(../img/color-toy.jpg); }
     .card__picture--8 {
-      background-image: url(../img/friends.jpg); }
+      border-radius: 3px;
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/friends.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -279,6 +285,20 @@ body {
     box-decoration-break: clone; }
     .card__heading--span-1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading--span-2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading--span-3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading--span-4 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading--span-5 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading--span-6 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading--span-7 {
+      background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.8), rgba(0, 0, 0, 0.8)); }
+    .card__heading--span-8 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
   .card__details {
     padding-top: 3rem;
     margin: 0 auto; }
@@ -289,13 +309,15 @@ body {
     color: #fff;
     position: absolute;
     width: 90%;
+    height: 100%;
     padding: 3rem; }
     .card__cta .description {
       font-size: 1.8rem; }
       .card__cta .description:first-child {
         margin-bottom: 2rem; }
     .card__cta .btn {
-      top: 12rem;
+      position: absolute;
+      bottom: 5rem;
       left: 50%;
       transform: translate(-50%, 0); }
 

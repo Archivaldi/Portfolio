@@ -24,11 +24,8 @@
 
         &--back {
             transform: rotateY(180deg);
-
-            &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-            }
-        }
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+         }
 
     }
 
@@ -55,31 +52,44 @@
         }   
 
         &--2 {
-            background-image: url(../img/bot.jpg);
+            border-radius: 3px;
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            url(../img/bot.jpg);
         }
 
         &--3 {
-            background-image: url(../img/stock-check.jpg);
+            border-radius: 3px;
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            url(../img/stock-check.jpg);
         }
 
         &--4 {
-            background-image: url(../img/books.jpg);
+            border-radius: 3px;
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            url(../img/books.jpg);
         }
 
         &--5 {
-            background-image: url(../img/click.jpg);
+            border-radius: 3px;
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            url(../img/click.jpg);
         }
 
         &--6 {
-            background-image: url(../img/shop.jpg);
+            border-radius: 3px;
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            url(../img/shop.jpg);
         }
 
         &--7 {
+            border-radius: 3px;
             background-image: url(../img/color-toy.jpg);
         }
 
         &--8 {
-            background-image: url(../img/friends.jpg);
+            border-radius: 3px;
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            url(../img/friends.jpg);
         }
     }
 
@@ -102,6 +112,27 @@
         &-1 {
             background-image:  linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
         }
+        &-2 {
+            background-image:  linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+        &-3 {
+            background-image:  linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+        &-4 {
+            background-image:  linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+        &-5 {
+            background-image:  linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+        &-6 {
+            background-image:  linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+        &-7 {
+            background-image:  linear-gradient(to right bottom, rgba(#eee, .8), rgba($color-black, .8));
+        }
+        &-8 {
+            background-image:  linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
     }
 
     &__details {
@@ -118,6 +149,7 @@
         color: $color-white;
         position: absolute;
         width: 90%;
+        height: 100%;
         padding: 3rem;
 
         & .description {
@@ -128,7 +160,8 @@
             }
         }
         & .btn {
-            top:12rem;
+            position: absolute;
+            bottom:5rem;
             left: 50%;
             transform: translate(-50%, 0);
         }
