@@ -22,7 +22,7 @@
                     <span class="heading-primary--main"> Artur Markov </span>
                     <span class="heading-primary--sub"> Full-stack Software Engineer </span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Projects</a>
+                <a href="#projects" class="btn btn--white btn--animated" id="scroll-button">Projects</a>
             </div>
         </header>
         <main>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-projects">
+            <section id="projects" class="section-projects">
                 <div class="u-center-text u-margin-bottom-medium">
                     <h2 class="heading-projects">
                         My projects
@@ -368,70 +368,14 @@
             </div>
         </footer>
 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
 
-        <!-- <section class="grid">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-        </section> -->
-
-        
+            $(document).ready(function(){
+                    $("#scroll-button").on("click", function(event){
+                    event.preventDefault();
+                    $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top }, 1500);})     
+                })
+        </script>
     </body>
 </html>

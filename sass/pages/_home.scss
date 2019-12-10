@@ -1,7 +1,7 @@
 .section-about {
     background-color: $color-greay-light-1;
     padding: 31rem 0;
-    margin-top: -20vh;
+    margin-top: -30vh;
 }
 
 .section-projects {
@@ -15,6 +15,7 @@
     background-color: $color-greay-light-1;
     transform: skewY(-7deg);
     margin-top: -11.5rem;
+    transition: all 3s;
     
     & > * {
         transform: skewY(7deg);
