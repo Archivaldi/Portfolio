@@ -1,0 +1,11 @@
+.footer {
+    height: 20rem;
+    padding: 5rem 0;
+    margin-top: -12rem;
+    bottom: 0;
+    background-color: $color-greay-light-1;
+
+    &__contact--info {
+        letter-spacing: 1px;
+    }
+}
