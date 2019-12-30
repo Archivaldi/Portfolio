@@ -8,4 +8,13 @@
     &__contact--info {
         letter-spacing: 1px;
     }
+
+    p > a {
+        color: $color-grey-dark;
+        text-decoration: none;
+
+        &:hover {
+            color: black;
+        }
+    }
 }

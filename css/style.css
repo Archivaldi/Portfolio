@@ -466,3 +466,8 @@ body {
   background-color: #f7f7f7; }
   .footer__contact--info {
     letter-spacing: 1px; }
+  .footer p > a {
+    color: #777;
+    text-decoration: none; }
+    .footer p > a:hover {
+      color: black; }
