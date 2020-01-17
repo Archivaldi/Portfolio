@@ -187,12 +187,23 @@ body {
   opacity: .75;
   background-size: cover;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
-  top: 5rem;
-  height: 65rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6); }
+  @media (max-width: 75em) {
+    .text-me {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/text-me.jpg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .text-me {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/text-me.jpg); } }
   .text-me__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .text-me__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .text-me__form {
+        width: 100%; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -423,11 +434,13 @@ body {
       transform: translate(-50%, 0); }
   @media (max-width: 56.25em) {
     .card {
-      height: auto; }
+      height: auto;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.7); }
       .card__side {
         height: auto;
         position: relative;
-        border-radius: 3px; }
+        box-shadow: none; }
         .card__side--back {
           margin-top: -4.2rem;
           transform: rotateY(0);

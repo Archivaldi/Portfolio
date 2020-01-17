@@ -173,11 +173,13 @@
     @include respond(tab-port){
     
         height: auto;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .7);
 
         &__side {
             height: auto;
             position: relative;
-            border-radius: 3px;
+            box-shadow: none;
 
             &--back {
                 margin-top: -4.2rem;
