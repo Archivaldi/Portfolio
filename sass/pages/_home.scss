@@ -2,6 +2,10 @@
     background-color: $color-greay-light-1;
     padding: 31rem 0;
     margin-top: -30vh;
+
+    @include respond (phone) {
+        margin-top: -25vh;
+    }
 }
 
 .section-projects {
@@ -16,6 +20,10 @@
     transform: skewY(-7deg);
     margin-top: -11.5rem;
     transition: all 3s;
+
+    @include respond (tab-port) {
+        margin-top: 10rem;
+    }
     
     & > * {
         transform: skewY(7deg);
