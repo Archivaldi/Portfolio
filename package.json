@@ -19,6 +19,6 @@
   "homepage": "https://github.com/Archivaldi/Portfolio#readme",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
